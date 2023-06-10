@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Spinner</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script>
+      
+    </script>
+   
+
+</head>
+
+<body>
+
+
+  
+   
+    <section class="pt-0  mt-5 p-3 pt-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 pt-3 pb-3 shadow__11">
+                    <div class="row">
+                       
+                        <!-- ----left side div---- -->
+                        <div class="col-md-6 text-center pt-3 pb-3">
+                            <div class="pt-2 pb-2 pl-2 pr-2"><select name id="colorPt"
+                                    class="form-check-inline fw__normal fs-6">
+                                    <option value>Color Category</option>
+                                    <option value="1">Type 1</option>
+                                    <option value="2">Type 2</option>
+                                    <option value="3">Type 3</option>
+                                    <option value="4">Type 4</option>
+                                </select></div>
+                            <div id="chart">
+
+
+                            </div>
+                            <div id="question"></div>
+                        </div>
+
+
+                        <audio id="spinnerSound" src="./sound/editvoice123456.mp3"></audio>
+
+
+                        <audio id="clappingSound" src="./sound/clapping12.mp3"></audio>
+
+
+
+                        <!-- ----right side div---- -->
+                        <div class="col-md-6 ">
+                            <!-- ---Participants---- -->
+                            <h4 class="text__primary">Text</h4>
+                            <div id="spinNameTest" contenteditable="true" class="form-control spinName fw-bold">
+                                <div>YES</div>
+                                <div>NO</div>
+                                <div>YES</div>
+                                <div>NO</div>
+                                <div>YES</div>
+                                <div>NO</div>
+
+                            </div>
+                          
+                            <!-- ---Results---- -->
+                            <h4 class="text__primary mt-5">Results<small style="cursor: pointer "
+                                    onclick="$('.spinNameSelected').html('');preNames()" class="float-end">Clear</small>
+                            </h4>
+                            <div class="form-control h-100 overflow-auto spinNameSelected fw-bold mx-370  mt-2"></div>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+     
+            <div class="row mt-5">
+                <div class="col-md-12 mt-3 mb-3 text-center">
+                    <div class="sharethis-inline-share-buttons"></div>
+                </div>
+            </div>
+
+            <div class="row p-0 m-0">
+                <div id="append-comment"></div>
+            </div>
+        </div>
+        <div class="container-fluid"></div>
+    </section>
+  
+  
+  
+  
+
+
+    </body>
+    <script src="js/script.js"></script>
+    <script src="js/d3.min.js" charset="utf-8"></script>
+    <script src="js/sw_alert.min.js"></script>
+    <script src="js/wheel-spinner.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/custom.js"></script>
+
+    </html>
